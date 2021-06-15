@@ -1,0 +1,1281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MudletPackage>
+<MudletPackage version="1.001">
+	<ScriptPackage>
+		<ScriptGroup isActive="yes" isFolder="yes">
+			<name>Forging</name>
+			<packageName></packageName>
+			<script></script>
+			<eventHandlerList />
+			<Script isActive="yes" isFolder="no">
+				<name>ForgingSizeCommodities</name>
+				<packageName></packageName>
+				<script>ForgingSizeCommodities = {
+
+
+  dirk = {
+  
+    ["iron"]  = 1,
+    ["steel"] = 2,
+  },
+  
+  
+  whip = {
+  
+    ["iron"]    = 1,
+    ["leather"] = 5, 
+    ["wood"]    = 2,
+  },
+  
+  
+  axe = {
+  
+   ["wood"] = 3,
+   ["iron"] = 3,
+  },
+  
+  
+  rapier = {
+  
+    ["steel"] = 5,
+  },
+  
+  
+  battleaxe = {
+  
+    ["stee"] = 7,
+    ["leather"] = 1,
+    ["wood"] = 1,
+  },
+  
+  
+  flail = {
+  
+    ["wood"] = 1,
+    ["iron"] = 3,
+    ["steel"] = 3,
+  },
+  
+  
+  warhammer = {
+  
+    ["wood"] = 3,
+    ["steel"] = 3,
+  },
+  
+  
+  lance = {
+  
+    ["steel"] = 3,
+    ["wood"] = 5,
+  },
+  
+}
+
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>ForgingWeaponSize</name>
+				<packageName></packageName>
+				<script>ForgingWeaponSize = {
+
+  dirk = 1, 
+  whip = 2, 
+  axe = 3, 
+  rapier = 4, 
+  battleaxe = 5,
+  flail = 6,
+  warhammer = 7, 
+  lance = 8,
+
+}  </script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>ForgingDescriptorCommodities</name>
+				<packageName></packageName>
+				<script>ForgingDescriptorCommodities = {
+
+--Apprentice Blacksmith
+
+ ["archaic"] = {},
+ ["curved"]  = {},
+ ["dented"]  = {},
+ ["dull"]    = {},
+ ["grooved"] = {},
+ ["iron"]    = {},
+ 
+ 
+ ["jagged"] = {
+ 
+    ["iron"] = 2, 
+ },
+ 
+ ["lightweight"] = {},
+ ["malformed"]   = {},
+ ["mud-caked"]   = {},
+ ["nimble"]      = {},
+ ["notched"]     = {},
+ ["ordinary"]    = {},
+ ["pitted"]      = {},
+ ["plain"]       = {},
+ ["pointed"]     = {},
+ ["primitive"]   = {},
+ ["ragged"]      = {},
+ ["rustic"]      = {},
+ ["scarred"]     = {},
+ ["shabby"]      = {},
+ ["sharp"]       = {},
+ ["simple"]      = {},
+ ["small"]       = {},
+ 
+ 
+ ["solid"] = {
+ 
+    ["steel"] = 1,
+ },
+ 
+ 
+ ["soot-covered"] = {
+ 
+    ["coal"] = 1,
+ },
+ 
+ 
+ ["sooty"] = {
+ 
+    ["coal"] = 1,
+ },
+ 
+ 
+ ["steel"]    = {},
+ ["straight"] = {},
+ 
+ 
+ ["sturdy"] = {
+ 
+    ["steel"] = 1,
+ },
+ 
+ ["tapering"]      = {},
+ ["tarnished"]     = {}, 
+ ["thick"]         = {},
+ ["thin"]          = {},
+ ["training"]      = {},
+ ["ugly"]          = {},
+ ["unadorned"]     = {},
+ ["unembellished"] = {},
+ ["worn"]          = {},
+
+--Journeyman Blacksmith
+
+ 
+ ["balanced"] = {
+ 
+    ["iron"] = 2, 
+ },
+
+
+ ["barbed"] = {
+  
+    ["iron"] = 2,
+ },
+
+ 
+ ["beefy"] = {
+ 
+    ["steel"] = 1,
+ },
+
+
+ ["begrimed"] = {
+ 
+    ["iron"] = 1,
+    ["coal"] = 3,
+ },
+
+
+ ["bevelled"] = {
+ 
+    ["steel"] = 1,
+ },
+
+
+ ["big"] = {
+ 
+    ["steel"] = 1,
+ },
+ 
+ 
+ ["brawny"] = {
+ 
+    ["steel"] = 1,
+ },
+ 
+
+ ["bulky"] = {
+ 
+    ["iron"] = 3,
+ },
+
+
+ ["costly"] = {
+ 
+    ["gold"] = 2,
+ },
+
+
+ ["daunting"] = {
+ 
+    ["steel"] = 1,
+ },
+
+
+ ["double-edge"] = {
+ 
+    ["steel"] = 1,
+ },
+ 
+ 
+ ["double-sided"] = {
+ 
+    ["steel"] = 1,
+  },
+  
+
+ ["durable"] = {
+ 
+    ["iron"] = 2,
+ },
+
+
+ ["gaudy"] = {
+    
+    ["gold"] = 1,
+ },
+
+
+ ["grim"] = {
+ 
+    ["iron"] = 2,
+ },
+
+ ["hardy"] = {
+
+    ["iron"] = 2,
+ },
+
+
+ ["heavy"] = {
+ 
+    ["steel"] = 1,
+ },
+  
+    
+ ["hefty"] = {
+ 
+    ["iron"] = 1,
+ },
+ 
+ 
+ ["honed"] = {
+ 
+    ["steel"] = 1,
+ },
+ 
+ 
+ ["hooked"] = {
+ 
+    ["iron"] = 2,
+ },
+ 
+ 
+ ["iron-tipped"] = {
+ 
+    ["iron"] = 2,
+ },
+ 
+ 
+ ["keen"] = {
+ 
+    ["iron"] = 2,
+ },
+ 
+ 
+ ["large"] = {
+ 
+    ["steel"] = 1,
+ },
+ 
+ 
+ ["molted"] = {
+
+    ["steel"] = 1,
+ },
+ 
+ 
+ ["polished"] = {
+ 
+    ["steel"] = 1,
+ }, 
+ 
+ 
+ ["ponderous"] = {
+ 
+    ["steel"] = 1,
+ },
+ 
+
+ ["resilient"] = {
+ 
+    ["steel"] = 1,
+ }, 
+ 
+ 
+ ["rippled"] = {
+ 
+    ["steel"] = 1,
+ },
+ 
+ 
+ ["rounded"] = {
+ 
+    ["iron"] = 2,
+ }, 
+
+
+ ["rugged"] = {
+ 
+    ["iron"] = 2,
+ },
+
+
+ ["single-edged"] = {
+ 
+    ["steel"] = 1,
+ },
+ 
+ 
+ ["sinuous"] = {
+ 
+    ["leather"] = 3,
+ },
+ 
+
+ ["sleek"] = {
+ 
+    ["steel"] = 1,
+},
+
+
+ ["sizable"] = {
+    
+    ["steel"] = 1,
+ },
+  
+  
+ ["slender"] = {
+ 
+    ["steel"] = 1,
+ },
+   
+
+ ["stout"] = {
+ 
+    ["iron"] = 2,
+ },
+ 
+ 
+ ["supple"] = {
+ 
+    ["leather"] = 3,
+ },
+ 
+ 
+ ["tempered"] = {
+
+    ["steel"] = 1,
+ },
+
+
+ ["undulating"] = {
+ 
+    ["leather"] = 3,
+ },
+ 
+ 
+ ["well-made"] = {
+ 
+    ["steel"] = 1,
+ },
+ 
+ ["winding"] = {
+ 
+    ["leather"] = 3,
+ },
+
+
+ --Blacksmith
+ 
+ 
+ ["Delosian"] = {
+ 
+    ["steel"] = 1,
+    ["iron"]  = 3,
+ },
+ 
+ 
+ ["knife-edged"] = {
+ 
+    ["steel"] = 2,
+ },
+ 
+ 
+ ["obsidian-tipped"] = {
+ 
+    ["obsidian"] = 8,
+ },
+ 
+ 
+ ["ominous"] = {
+ 
+    ["steel"]    = 1,
+    ["iron"]     = 2,
+    ["obsidian"] = 2,
+ },
+ 
+ 
+ ["Peshwari"] = {
+ 
+    ["gold"]   = 1,
+    ["silver"] = 1,
+ },
+ 
+ 
+ ["puissant"] = {
+ 
+    ["iron"] = 1,
+    ["steel"] = 1,
+ },
+  
+ 
+ ["razor-sharp"] = {
+ 
+    ["steel"] = 2,
+ },
+ 
+ 
+ ["serrated"] = {
+ 
+    ["steel"] = 1,
+    ["iron"]  = 2,
+ },
+ 
+ 
+ ["Siroccian"] = {
+ 
+    ["iron"]     = 2,
+    ["obsidian"] = 6,
+ },
+ 
+ 
+ ["snaky"] = {
+ 
+    ["leather"] = 5,
+ },
+ 
+ 
+ ["steel-tipped"] = {
+ 
+    ["steel"] = 2,
+ },
+ 
+ 
+ ["Targossian"] = {
+
+    ["steel"] = 2,
+ },
+ 
+ 
+ ["Theran"] = {
+ 
+    ["steel"] = 2,
+ },
+ 
+ 
+ ["twisted"] = {
+ 
+    ["leather"] = 5,
+ },
+ 
+ 
+ ["Vashnari"] = {
+ 
+    ["iron"] = 6,
+ },
+ 
+ 
+ ["baleful"] = {
+ 
+    ["steel"] = 1,
+    ["iron"]  = 2,
+ },
+ 
+    
+ ["ceremonial"] = {
+ 
+    ["silver"] = 2,
+ },
+ 
+ 
+ ["cruel"] = {
+ 
+    ["steel"] = 1,
+    ["iron"]  = 3,
+ },
+ 
+  
+ ["desert"] = {
+ 
+    ["steel"]    = 1,
+    ["obsidian"] = 3,
+    ["bone"]     = 4, 
+ },
+ 
+  
+ ["eastern"] = {
+ 
+    ["platinum"] = 1,
+ }, 
+ 
+ 
+ ["elegant"] = {
+ 
+    ["silver"] = 1,
+    ["steel"]  = 1,
+ }, 
+ 
+ 
+ ["etched"] = {
+ 
+    ["steel"] = 2,
+ }, 
+ 
+ 
+ ["fancy"] = {
+ 
+    ["gold"] = 1,
+ },
+ 
+  
+ ["flashy"] = {
+ 
+    ["gold"] = 1,
+ }, 
+ 
+ 
+ ["graceful"] = {
+ 
+    ["silver"] = 1,
+    ["steel"]  = 1,
+ }, 
+ 
+ 
+ ["grandiose"] = {
+ 
+    ["gold"] = 2,
+ }, 
+ 
+ 
+ ["impressive"] = {
+ 
+    ["steel"] = 2,
+ }, 
+ 
+ 
+ ["lovely"] = {
+ 
+    ["silver"] = 2,
+ }, 
+ 
+ 
+ ["lustrous"] = {
+ 
+    ["silver"] = 1,
+ }, 
+ 
+ 
+ ["menacing"] = {
+ 
+    ["steel"] = 1,
+    ["iron"]  = 2,
+ }, 
+ 
+ 
+ ["northern"] = {
+ 
+    ["iron"] = 4,
+ },
+  
+  
+ ["ornamental"] = {
+ 
+    ["gems"] = 1,
+ },
+ 
+  
+ ["ostentatious"] = {
+ 
+    ["gold"]     = 1,
+    ["gems"]     = 1,
+    ["platinum"] = 1,
+ }, 
+ 
+ 
+ ["savage"] = {
+ 
+    ["steel"] = 1,
+    ["iron"]  = 3,
+ },
+ 
+  
+ ["saw-edged"] = {
+ 
+    ["steel"] = 1,
+    ["iron"]  = 2,
+ }, 
+ 
+ 
+ ["shining"] = {
+ 
+    ["silver"] = 1,
+    ["steel"]  = 1,
+ }, 
+ 
+ 
+ ["southern"] = {
+ 
+    ["steel"] = 2,
+ },
+ 
+  
+ ["spiked"] = {
+ 
+    ["iron"] = 3,
+ }, 
+ 
+ 
+ ["splendid"] = {
+ 
+    ["silver"] = 1,
+    ["steel"]  = 1,
+ }, 
+ 
+ 
+ ["unnerving"] = {
+ 
+    ["obsidian"] = 1,
+    ["iron"]     = 2,
+ }, 
+ 
+ 
+ ["western"] = {
+ 
+    ["iron"]  = 1,
+    ["steel"] = 1,
+ }, 
+ 
+ 
+ --Artisan Metalworker
+ 
+ 
+ 
+ ["barbaric"] = {
+ 
+    ["iron"] = 18,
+ },
+ 
+  
+ ["barbarous"] = {
+ 
+    ["iron"] = 18,
+ },
+ 
+  
+ ["beautiful"] = {
+ 
+    ["platinum"] = 3,
+    ["silver"]   = 4,
+    ["gold"]     = 7,
+    ["steel"]    = 7,
+ },
+ 
+  
+ ["bejewelled"] = {
+ 
+    ["gems"]  = 1,
+    ["steel"] = 1,
+ },
+ 
+  
+ ["bronzed"] = {
+ 
+    ["steel"] = 4,
+    ["iron"]  = 6,
+ },
+ 
+ 
+ ["brutal"] = {
+ 
+    ["iron"] = 18,
+ }, 
+  
+ ["charred"] = {
+ 
+    ["coal"] = 12,
+    ["iron"] = 8,
+ },
+ 
+  
+ ["delicate"] = {
+ 
+    ["platinum"] = 2,
+    ["silver"]   = 2,
+ },
+ 
+  
+ ["fearsome"] = {
+ 
+    ["steel"] = 6,
+    ["iron"]  = 7,
+ },
+ 
+  
+ ["formidable"] = {
+ 
+    ["iron"]  = 4,
+    ["steel"] = 4,
+ },
+ 
+  
+ ["gleaming"] = {
+ 
+    ["silver"] = 4,
+    ["steel"]  = 4,
+ },
+ 
+  
+ ["glorious"] = {
+ 
+    ["steel"] = 3,
+ },
+ 
+  
+ ["grand"] = {
+ 
+    ["gold"]     = 2,
+    ["platinum"] = 2,
+    ["steel"]    = 4,
+ },
+ 
+  
+ ["gruesome"] = {
+ 
+    ["steel"] = 6,
+    ["iron"]  = 8,
+ },
+ 
+  
+ ["intimidating"] = {
+ 
+    ["iron"]  = 6,
+    ["steel"] = 6,
+ },
+ 
+  
+ ["ornate"] = {
+ 
+    ["platinum"] = 2,
+    ["gold"] = 4,
+ },
+ 
+ 
+ ["powerful"] = {
+ 
+    ["iron"] = 6,
+    ["steel"] = 7,
+ },
+  
+  
+ ["rune-carved"] = {
+ 
+    ["gems"]  = 2,
+    ["steel"] = 4,
+ },
+ 
+  
+ ["rune-etched"] = {
+ 
+    ["gems"]  = 2,
+    ["steel"] = 4,
+ },
+ 
+  
+ ["scorched"] = {
+ 
+    ["coal"] = 12,
+    ["iron"] = 8,
+ },
+ 
+ 
+ ["serpentine"] = {
+ 
+    ["leather"] = 19,
+ },
+ 
+ 
+ ["shimmering"] = {
+ 
+    ["silver"]   = 1,
+    ["gold"]     = 2,
+    ["platinum"] = 2,
+ },
+ 
+  
+ ["sinister"] = {
+ 
+    ["steel"]    = 4,
+    ["obsidian"] = 8,
+ },
+ 
+  
+ ["stunning"] = {
+ 
+    ["gold"]  = 2,
+    ["steel"] = 4,
+ },
+ 
+ 
+ ["vicious"] = {
+ 
+    ["iron"] = 16,
+ },
+ 
+ 
+ ["wicked"] = {
+ 
+    ["steel"] = 6,
+    ["iron"]  =8,
+ },
+ 
+ 
+ --Vituoso Blacksmith
+ 
+ 
+ ["blackened"] = {
+ 
+    ["iron"] = 30,
+    ["coal"] = 70,
+ },
+ 
+  
+ ["blue"] = {
+ 
+    ["lacquer"] = 2,
+    ["blueink"] = 30,
+ },
+ 
+  
+ ["brown"] = {
+ 
+    ["lacquer"]   = 2,
+    ["redink"]    = 60,
+    ["yellowink"] = 8,
+ },
+ 
+ 
+ ["colossal"] = {
+ 
+    ["steel"] = 15,
+    ["iron"]  = 23,
+ },
+ 
+  
+ ["dazzling"] = {
+ 
+    ["silver"] = 4,
+    ["gems"]   = 5,
+    ["steel"]  = 6,
+ },
+ 
+ 
+ ["deadly"] = {
+ 
+    ["steel"] = 15,
+    ["iron"]  = 18,
+ },
+ 
+ 
+ ["devastating"] = {
+ 
+    ["iron"]  = 20,
+    ["steel"] = 20,
+ },
+ 
+  
+ ["enormous"] = {
+ 
+    ["steel"] = 17,
+    ["iron"]  = 22,
+ },
+   
+  
+ ["exquisite"] = {
+ 
+    ["steel"]    = 10,
+    ["platinum"] = 4,
+    ["silver"]   = 8,
+ },
+ 
+  
+ ["extravagant"] = {
+ 
+    ["gold"]     = 11,
+    ["platinum"] = 6,
+ },
+ 
+  
+ ["flawless"] = {
+ 
+    ["steel"] = 30,
+ },
+ 
+  
+ ["gigantic"] = {
+ 
+    ["steel"] = 17,
+    ["iron"]  = 22,
+ },
+   
+  
+ ["gilded"] = {
+ 
+    ["gold"] = 21,
+ },
+ 
+  
+ ["gorgeous"] = {
+ 
+    ["gold"]     = 7,
+    ["platinum"] = 7,
+    ["steel"]    = 7,
+ },
+ 
+  
+ ["green"] = {
+ 
+    ["greenink"] = 15,
+    ["lacquer"]  = 2,
+ },
+ 
+  
+ ["grey"] = {
+ 
+    ["lacquer"] = 2,
+ },
+ 
+ 
+ ["huge"] = {
+ 
+    ["steel"] = 15,
+    ["iron"]  = 19,
+ },
+ 
+
+ ["immense"] = {
+ 
+    ["steel"] = 15,
+    ["iron"]  = 23,
+ },
+ 
+  
+ ["indomitable"] = {
+ 
+    ["steel"] = 15,
+    ["iron"]  = 22,
+ },
+ 
+ 
+ ["mammoth"] = {
+ 
+    ["steel"] = 18,
+    ["iron"]  = 21,
+ },
+ 
+ 
+ ["massive"] = {
+ 
+    ["steel"] = 15,
+    ["iron"]  = 20,
+ },
+ 
+  
+ ["mighty"] = {
+ 
+    ["iron"]  = 19,
+    ["steel"] = 19,
+ },
+ 
+ 
+ ["monstrous"] = {
+ 
+    ["iron"]  = 18,
+    ["steel"] = 21,
+ },
+ 
+  
+ ["orange"] = {
+ 
+    ["yellowink"] = 10,
+    ["lacquer"]   = 2,
+    ["redink"]    = 20,
+ },
+ 
+ 
+ ["overpowering"] = {
+ 
+    ["steel"] = 18,
+    ["iron"]  = 20,
+ },
+ 
+  
+ ["perfect"] = {
+ 
+    ["steel"] = 30,
+ },
+ 
+  
+ ["pink"] = {
+ 
+    ["lacquer"] = 2,
+    ["redink"]  = 80,
+ },
+ 
+  
+ ["purple"] = {
+ 
+    ["lacquer"]   = 2,
+    ["purpleink"] = 7,
+ },
+ 
+  
+ ["radiant"] = {
+ 
+    ["platinum"] = 8,
+    ["gold"]     = 9,
+ },
+ 
+  
+ ["red"] = {
+ 
+    ["lacquer"] = 2,
+    ["redink"]  = 80,
+ },
+ 
+  
+ ["tan"] = {
+ 
+    ["redink"]    = 15,
+    ["yellowink"] = 15,
+    ["lacquer"]   = 2,
+ },
+ 
+  
+ ["violet"] = {
+ 
+    ["lacquer"]   = 2,
+    ["redink"]    = 20,
+    ["purpleink"] = 5,
+ },
+ 
+  
+ ["white"] = {
+ 
+    ["lacquer"] = 3,
+ },
+ 
+  
+ ["yellow"] = {
+ 
+    ["lacquer"]   = 2,
+    ["yellowink"] = 20,
+ },
+ 
+  
+ 
+ --Master Blacksmith
+ 
+ 
+["alabaster"] = {
+
+    ["lacquer"] = 6,
+ },
+ 
+ 
+["amber"] = {
+
+    ["yellowink"] = 22,
+    ["lacquer"]   = 4,
+ },
+ 
+ 
+["azure"] = {
+
+    ["blueink"] = 35,
+    ["lacquer"] = 4,
+ },
+ 
+ 
+["black"] = {
+
+    ["blackink"] = 25,
+    ["lacquer"]  = 4,
+ },
+ 
+ 
+["bone-white"] = {
+
+    ["lacquer"] = 4,
+    ["bone"]    = 70,
+ },
+ 
+ 
+["cerulean"] = {
+
+    ["greenink"] = 13,
+    ["blueink"]  = 18,
+    ["lacquer"]  = 4,
+ },
+ 
+ 
+["crimson"] = {
+
+    ["lacquer"] = 4,
+    ["redink"]  = 50,
+ },
+ 
+ 
+["diabolical"] = {
+
+    ["steel"]    = 22,
+    ["iron"]     = 40,
+    ["obsidian"] = 40,
+ },
+ 
+ 
+ ["diamond-edged"] = {
+ 
+    ["gems"] = 22,
+ },
+ 
+ 
+["ebon"] = {
+
+    ["blackink"] = 40,
+    ["lacquer"]  = 5,
+ },
+ 
+ 
+["golden"] = {
+
+    ["gold"]    = 18,
+    ["lacquer"] = 5,
+ },
+ 
+ 
+["heavenly"] = {
+
+    ["gold"]     = 10,
+    ["platinum"] = 15,
+    ["steel"]    = 22,
+ },
+ 
+ 
+["indigo"] = {
+
+    ["lacquer"]   = 4,
+    ["purpleink"] = 9,
+ },
+ 
+ 
+["ivory"] = {
+
+    ["lacquer"] = 6,
+ },
+ 
+ 
+["jet-black"] = {
+
+    ["blackink"] = 40,
+    ["lacquer"]  = 5,
+ },
+ 
+ 
+["nightmarish"] = {
+
+    ["obsidian"] = 20,
+    ["steel"]    = 25,
+    ["iron"]     = 50,
+ },
+ 
+ 
+["ochre"] = {
+
+    ["yellowink"] = 12,
+    ["lacquer"]   = 4,
+    ["redink"]    = 40,
+ },
+ 
+ 
+["scarlet"] = {
+
+    ["lacquer"] = 4,
+    ["redink"]  = 75,
+ },
+ 
+ 
+["silver"] = {
+
+    ["silver"]  = 20,
+    ["lacquer"] = 3,
+ },
+ 
+ 
+ ["skull-festooned"] = {
+ 
+    ["bone"] = 220,
+ },
+ 
+ 
+["turquoise"] = {
+
+    ["greenink"] = 15,
+    ["lacquer"]  = 4,
+ },
+ 
+ 
+["vermillion"] = {
+
+    ["lacquer"] = 4,
+    ["redink"]  = 75,
+ },
+ 
+ 
+ 
+}</script>
+				<eventHandlerList />
+			</Script>
+		</ScriptGroup>
+	</ScriptPackage>
+</MudletPackage>

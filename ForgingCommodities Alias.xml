@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MudletPackage>
+<MudletPackage version="1.001">
+	<AliasPackage>
+		<AliasGroup isActive="yes" isFolder="yes">
+			<name>Forging</name>
+			<script></script>
+			<command></command>
+			<packageName></packageName>
+			<regex></regex>
+			<Alias isActive="yes" isFolder="no">
+				<name>imake</name>
+				<script>--Alias above would look like: imake 10 pink purple lance ----&gt; translates to outrifting 10x commodies for pink purple lance
+--Note: This alias just outrifts the commodities you need. Take a look at the bottom of this page for an alias example to physically forge items.
+
+ForgingAmount = tonumber(matches[2])
+Descriptor1 = matches[3]
+Descriptor2 = matches[4]
+ForgingItem = matches[5]
+
+-- This setalias is if you want to trigger/queue multiple sets of forged items. Just make a trigger on completion and send("queue add eqbal keepgoing").
+-- Note: I use an artefact anvil. If you do not own one, change the "from anvil" to "from forge"
+-- Warning: this setalias is automation, use at your own risk.
+
+--send("setalias keepgoing get "..ForgingItem.. " from anvil/forge for " ..Descriptor1.. " " ..Descriptor2.. " " ..ForgingItem)
+
+
+--outr ForgingItem commodities
+if ForgingSizeCommodities[ForgingItem] then
+    
+    for k,v in pairs(ForgingSizeCommodities[ForgingItem]) do
+
+        send("outr " ..ForgingAmount*v.. " "..k) 
+    end
+      
+    
+    
+--outr descriptor commodities multiplied by the forging size.
+   for k,v in pairs(ForgingDescriptorCommodities[Descriptor1]) do  
+    
+        send("outr ".. ForgingAmount*tonumber(v)*tonumber(ForgingWeaponSize[ForgingItem]).. " " ..k)
+   end 
+
+   for k,v in pairs(ForgingDescriptorCommodities[Descriptor2]) do  
+    
+    send("outr ".. ForgingAmount*tonumber(v)*tonumber(ForgingWeaponSize[ForgingItem]).. " " ..k)
+   end 
+
+end
+
+
+--This is my personal anvil dropper. You don't need this.
+--However, you can just erase everything and use the two send commands at the bottom for your own forging alias.
+for k,v in pairs(gmcp.Char.Items.List.items) do
+  if v.id == "93303" then
+    anvil_here = true
+    echo("yes, anvil is on the ground.")
+    
+    return
+    else anvil_here = false
+  end
+end
+
+if not anvil_here then
+ send("drop anvil;;outr 1 coal;;put 1 coal in 93303;;fire forge;;get coal from anvil")
+ send("forge for " ..Descriptor1.." " ..Descriptor2.. " " ..ForgingItem)
+end</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^imake (\d+) ([A-Za-z'-]+) ([A-Za-z'-]+) (\w+)$</regex>
+			</Alias>
+		</AliasGroup>
+	</AliasPackage>
+</MudletPackage>
